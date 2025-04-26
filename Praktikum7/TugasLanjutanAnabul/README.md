@@ -1,18 +1,56 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# 🐾 Simulasi Anabul (Hewan Peliharaan)
 
-## Folder Structure
+## Deskripsi
+Program ini merupakan simulasi interaktif yang menampilkan bunyi dan gerakan dari berbagai jenis hewan peliharaan seperti **Kucing**, **Anjing**, dan **Burung**. Program menggunakan konsep **inheritance**, **polimorfisme**, dan **abstraksi** dalam pemrograman berorientasi objek (OOP) di Java.
 
-The workspace contains two folders by default, where:
+## Struktur Program
+Program ini terdiri dari lima file Java utama:
+- `Main.java` — Program utama untuk menjalankan simulasi.
+- `Anabul.java` — Kelas abstrak induk untuk semua jenis hewan peliharaan.
+- `Kucing.java` — Subkelas dari `Anabul` yang merepresentasikan hewan kucing.
+- `Anjing.java` — Subkelas dari `Anabul` yang merepresentasikan hewan anjing.
+- `Burung.java` — Subkelas dari `Anabul` yang merepresentasikan hewan burung.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Fitur
+- Menampilkan data awal hewan peliharaan (nama, jenis, dan atribut khusus).
+- Simulasi suara dan gerakan setiap hewan menggunakan metode polimorfik `bersuara()` dan `bergerak()`.
+- Perubahan atribut setelah instansiasi objek dan penampilan data yang telah diperbarui.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Cara Menjalankan
+1. Kompilasi semua file Java:
+   ```bash
+   javac *.java
+   ```
+2. Jalankan program utama:
+   ```bash
+   java Main
+   ```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Contoh Output
+```
+SIMULASI ANABUL:
+================
 
-## Dependency Management
+Data Anabul 1:
+Jenis   : Kucing
+Nama    : Meowth
+Warna Bulu     : Orange
+Meowth bersuara: Meong!
+Meowth bergerak dengan melata.
+...
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Simulasi Perubahan Data
+=======================
+
+Data Kucing setelah diubah:
+Kucing dengan nama: Kitty, Warna bulu: Hitam
+Kitty bersuara: Meong!
+Kitty bergerak dengan melata.
+...
+```
+
+## Pembuat
+- **Nama**: Gege Centiana Putra  
+- **NIM**: 24060123120024  
+- **Tanggal Pembuatan**: 26 April 2025
